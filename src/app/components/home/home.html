@@ -1,0 +1,24 @@
+<section id="home" class="min-vh-100 w-100 py-5">
+  <h2 class="bg-danger p-5 text-white text-center">Home Section</h2>
+  <alert message="Hello" backgroundColor="#09c"> </alert>
+  <alert [message]="'Hello I need It'"></alert>
+  <p class="my-3" #element>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugiat alias
+    veniam officiis, dolores excepturi qui, atque libero ipsa sed officia fuga,
+    harum adipisci minima. Voluptas fugit tempora obcaecati temporibus, magnam
+    error, iste beatae earum ipsum maiores dolor! Accusamus tenetur esse
+    nesciunt accusantium quod repellat dolore cum, doloribus itaque saepe.
+  </p>
+  <button class="btn btn-danger d-block mb-3" (click)="test(element)">
+    Click Me
+  </button>
+  <button class="btn btn-info me-5" (click)="showMessage()">
+    show Message
+  </button>
+  <button class="btn btn-info" (click)="hideMessage()">hide Message</button>
+  <app-message></app-message>
+  <app-child>
+    <h2 #hel>Hello</h2>
+    <p>lorem5</p>
+  </app-child>
+</section>

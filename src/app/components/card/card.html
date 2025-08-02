@@ -1,0 +1,25 @@
+<div class="card p-2 text-center h-100">
+  @if (product.onSale) {
+  <span
+    class="bg-danger rounded-3 px-4 py-2 text-white text-center position-absolute end-0 d-inline"
+    >onSale</span
+  >
+  }
+  <img
+    class="card-img-top"
+    [src]="product.imageCover"
+    height="200px"
+    class="object-fit-contain mt-3"
+    alt="Title"
+  />
+  <div class="card-body">
+    <h4 class="card-title">
+      Title :{{ product.title.split(" ").slice(0, 2).join(" ") }}
+    </h4>
+    <p class="card-text">
+      Description :
+      {{ product.description.split(" ").slice(0, 2).join(" ") }}
+    </p>
+    <p class="card-text">Price : {{ product.price }}</p>
+  </div>
+</div>

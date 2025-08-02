@@ -1,0 +1,11 @@
+<section id="products" class="bg-dark-subtle py-5 mt-5">
+  <div class="container">
+    <div class="row g-4">
+      @for (product of productList; track product.id) {
+      <div class="col-md-4">
+        <custom-card [product]="product" />
+      </div>
+      }
+    </div>
+  </div>
+</section>
